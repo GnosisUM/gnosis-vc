@@ -1,13 +1,17 @@
-const CardComponent = ({ data, similarComps }: any) => {
+const CardComponent = ({ data }: any) => {
     return (
-        <div className="bg-white border border-gray-200 rounded-lg shadow ">
+        <div className="bg-white border border-gray-200 rounded-lg shadow">
             <div className="p-5">
                 <div className="flex items-center mb-5">
-                    <p className="bg-green-100 text-green-800 text-sm font-semibold inline-flex items-center p-1.5 rounded">
+                    <p
+                        className={`text-gray-900 ${
+                            data.aiRate >= 8.0 ? "bg-green-100" : "bg-red-100"
+                        } text-sm font-semibold inline-flex items-center p-1.5 rounded`}
+                    >
                         {data.aiRate}
                     </p>
                     <p className="ml-2 font-medium text-gray-900 ">
-                        {data.aiRateDesc}
+                        {data.aiRate >= 8.0 ? "Excellent" : "Unsuitable"}
                     </p>
                 </div>
                 <div>
@@ -17,21 +21,23 @@ const CardComponent = ({ data, similarComps }: any) => {
                     <p className="mb-3 font-normal text-gray-700 ">
                         {data.founder}
                     </p>
-                    <p className="mb-3 font-normal text-gray-700 ">
+                    <p className="mb-3 text-sm font-normal text-gray-700 ">
                         {data.desc}
                     </p>
                 </div>
 
                 <hr className="h-px my-6 bg-gray-200 border-0" />
 
-                <div className="flex justify-between mt-4">
-                    <span className="text-sm font-medium text-gray-900">
-                        Revenue
-                    </span>
-                    <span className="text-sm font-medium text-blue-700">
-                        RM6000000
-                    </span>
-                </div>
+                {data.attr.map((item) => (
+                    <div className="flex justify-between mt-4">
+                        <span className="text-sm font-medium text-gray-900">
+                            {item.type}
+                        </span>
+                        <span className="text-sm font-medium text-blue-700">
+                            {item.value}
+                        </span>
+                    </div>
+                ))}
 
                 <hr className="h-px my-6 bg-gray-200 border-0" />
 
@@ -42,7 +48,7 @@ const CardComponent = ({ data, similarComps }: any) => {
                 </div>
                 <div className="flow-root">
                     <ul role="list" className="flex justify-between">
-                        {similarComps.map((item) => (
+                        {data.similarComps.map((item) => (
                             <li className="float-left py-3">
                                 <div className="flex items-center space-x-2">
                                     <div className="flex-shrink-0">
