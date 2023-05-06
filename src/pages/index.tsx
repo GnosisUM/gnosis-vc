@@ -16,7 +16,7 @@ export default function Home() {
                         sourcing and vetting experience
                     </h1>
                     <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-                        Unlock the power of AI with AngelPulse, revolutionizing
+                        Unlock the power of AI with Archangel, revolutionizing
                         the way Angels source startups and effortlessly filter
                         through pitch decks for the perfect investment
                         opportunities

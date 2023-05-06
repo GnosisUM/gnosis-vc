@@ -8,13 +8,10 @@ const Navbar = () => {
             <div className="flex flex-wrap items-center justify-between p-4 border-b-2 border-gray-300">
                 <a href="/" className="flex items-center">
                     <img
-                        src="/angelpulse.svg"
+                        src="/archangel.svg"
                         className="h-8 mr-3"
                         alt="Flowbite Logo"
                     />
-                    {/* <span className="self-center text-2xl font-semibold whitespace-nowrap">
-                        AngelPulse
-                    </span> */}
                 </a>
                 <div className="flex items-center">
                     <div className="flex items-center justify-between order-1 w-auto">
