@@ -1,15 +1,20 @@
 const row = [
     {
-        product: "Product 1",
-        color: "Red",
-        cat: "Cat 1",
-        price: "1000",
+        founder: "Alep",
+        company : 'Alif Group',
+        date: "30 July 2023",
+        industry: "Finance",
+        description: "1000",
+        email : "",
+        contact : '',
+        location : ''
     },
     {
-        product: "Product 2",
-        color: "Blue",
-        cat: "Cat 2",
-        price: "1100",
+        founder: "Bar",
+        company : 'B Sdn Bhd',
+        date: "31 July 2023",
+        industry: "Automotive",
+        description: "1000",
     },
 ];
 
