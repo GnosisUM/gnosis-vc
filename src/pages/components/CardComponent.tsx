@@ -28,7 +28,7 @@ const CardComponent = ({ data }: any) => {
 
                 <hr className="h-px my-6 bg-gray-200 border-0" />
 
-                {data.attr.map((item) => (
+                {data.attr.map((item:any) => (
                     <div className="flex justify-between mt-4">
                         <span className="text-sm font-medium text-gray-900">
                             {item.type}
@@ -48,7 +48,7 @@ const CardComponent = ({ data }: any) => {
                 </div>
                 <div className="flow-root">
                     <ul role="list" className="flex justify-between">
-                        {data.similarComps.map((item) => (
+                        {data.similarComps.map((item:any) => (
                             <li className="float-left py-3">
                                 <div className="flex items-center space-x-2">
                                     <div className="flex-shrink-0">
