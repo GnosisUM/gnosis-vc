@@ -99,7 +99,7 @@ const DrawerComponent = ({ slideIn, handleSlideIn, data }: any) => {
           </div>
         </div>
 
-        <dl className="max-w-md pb-4 text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+        <dl className="pb-4 text-gray-900 divide-y divide-gray-200  dark:text-white dark:divide-gray-700">
           <div className="flex flex-col pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Founder

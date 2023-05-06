@@ -34,8 +34,8 @@ const vet = () => {
                     value: "2017",
                 },
                 {
-                    type: "VC",
-                    value: "None",
+                    type: "VC/Angel",
+                    value: "1337 Ventures",
                 },
                 {
                     type: "Total Fundings",
@@ -73,8 +73,8 @@ const vet = () => {
                     value: "2017",
                 },
                 {
-                    type: "Angel",
-                    value: "None",
+                    type: "VC/Angel",
+                    value: "Cradle Fund Sdn Bhd",
                 },
                 {
                     type: "Total Fundings",
@@ -85,7 +85,7 @@ const vet = () => {
         {
             company: "MindfulMinutes",
             founder: "Emily Davis",
-            desc: "A meditation and wellness app designed to help individuals lead more balanced and mindful lives..",
+            desc: "A meditation and wellness app designed to help individuals lead more balanced and mindful lives.",
             aiRate: "7.2",
             status: "default",
             similarComps: [
@@ -112,8 +112,8 @@ const vet = () => {
                     value: "2021",
                 },
                 {
-                    type: "Angel",
-                    value: "None",
+                    type: "VC/Angel",
+                    value: "Gobi Partners",
                 },
                 {
                     type: "Total Fundings",
@@ -172,7 +172,7 @@ const vet = () => {
                         ></path>
                     </svg>
                 </a>
-                <div className="container grid">
+                <div className="container grid place-items-center place-content-center">
                     {data.map((item) => (
                         <div
                             className={`container py-10 child-card ${
@@ -187,12 +187,14 @@ const vet = () => {
                         </div>
                     ))}
                     {data.length == 0 && (
+                        <div className="container flex items-center justify-center">
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                             No more ventures available!
                         </h5>
+                        </div>
+
                     )}
                 </div>
-                <div></div>
                 <a
                     href="#"
                     className={`container flex items-center justify-center bg-green-200 rounded-l-lg ${
