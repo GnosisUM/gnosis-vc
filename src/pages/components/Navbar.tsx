@@ -6,15 +6,15 @@ const Navbar = () => {
     return (
         <nav className="bg-white border-gray-200">
             <div className="flex flex-wrap items-center justify-between p-4 border-b-2 border-gray-300">
-                <a href="https://flowbite.com/" className="flex items-center">
+                <a href="/" className="flex items-center">
                     <img
-                        src="https://flowbite.com/docs/images/logo.svg"
+                        src="/angelpulse.svg"
                         className="h-8 mr-3"
                         alt="Flowbite Logo"
                     />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap">
-                        Flowbite
-                    </span>
+                    {/* <span className="self-center text-2xl font-semibold whitespace-nowrap">
+                        AngelPulse
+                    </span> */}
                 </a>
                 <div className="flex items-center">
                     <div className="flex items-center justify-between order-1 w-auto">
@@ -26,11 +26,11 @@ const Navbar = () => {
                                         router.asPath
                                             .toString()
                                             .includes("source")
-                                            ? "block p-0 text-lg text-blue-700 bg-transparent bg-blue-700 rounded"
-                                            : "block p-0 text-lg text-gray-900 rounded hover:bg-transparent hover:text-blue-700"
+                                            ? "block p-0 text-lg text-blue-700 bg-transparent bg-blue-700 rounded uppercase"
+                                            : "block p-0 text-lg text-gray-900 rounded hover:bg-transparent hover:text-blue-700 uppercase"
                                     }
                                 >
-                                    Source
+                                    discover
                                 </a>
                             </li>
                             <li>
@@ -38,12 +38,12 @@ const Navbar = () => {
                                     href="/vet"
                                     className={
                                         router.asPath.toString().includes("vet")
-                                            ? "block p-0 text-lg text-blue-700 bg-transparent bg-blue-700 rounded"
-                                            : "block p-0 text-lg text-gray-900 rounded hover:bg-transparent hover:text-blue-700"
+                                            ? "block p-0 text-lg text-blue-700 bg-transparent bg-blue-700 rounded uppercase"
+                                            : "block p-0 text-lg text-gray-900 rounded hover:bg-transparent hover:text-blue-700 uppercase"
                                     }
                                     aria-current="page"
                                 >
-                                    Vet
+                                    vet
                                 </a>
                             </li>
                             <li>
