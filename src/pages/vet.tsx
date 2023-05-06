@@ -21,10 +21,11 @@ const similarComps = [
         img: "/img/uber.png",
     },
 ];
+
 const vet = () => {
     return (
-        <>
-            <div className="flex gap-8 columns-3">
+        <>            
+            <div className="flex h-screen gap-8 columns-3">
                 <a
                     href="#"
                     className="container flex items-center justify-center bg-red-200 rounded-r-lg"
@@ -45,7 +46,7 @@ const vet = () => {
                         ></path>
                     </svg>
                 </a>
-                <div className="container">
+                <div className="container py-10">
                     <CardComponent data={data} similarComps={similarComps} />
                 </div>
                 <a
@@ -69,18 +70,6 @@ const vet = () => {
                     </svg>
                 </a>
             </div>
-
-            {/* <div className="container flex gap-10 py-8 mx-auto columns-3">
-                <div className="container">
-                    <CardComponent data={data} />
-                </div>
-                <div className="container">
-                    <CardComponent data={data} />
-                </div>
-                <div className="container">
-                    <CardComponent data={data} />
-                </div>
-            </div> */}
         </>
     );
 };

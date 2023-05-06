@@ -22,7 +22,7 @@ const DrawerComponent = ({ slideIn, handleSlideIn, data }: any) => {
     setTimeout(() => {
       console.log('Toast TIMEOUTE')
       setToast(false)
-    }, 1000);
+    }, 4000);
   }
   useEffect(()=>{
 
@@ -83,9 +83,9 @@ const DrawerComponent = ({ slideIn, handleSlideIn, data }: any) => {
         </p>
 
         <div className="pb-4">
-          <div className="m-auto relative w-32 h-32 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+          <div className="relative w-32 h-32 m-auto overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
             <svg
-              className="absolute w-34 h-36 text-gray-400 -left-2"
+              className="absolute text-gray-400 w-34 h-36 -left-2"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -99,44 +99,44 @@ const DrawerComponent = ({ slideIn, handleSlideIn, data }: any) => {
           </div>
         </div>
 
-        <dl className="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 pb-4">
+        <dl className="max-w-md pb-4 text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
           <div className="flex flex-col pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Founder
             </dt>
             <dd className="text-sm font-semibold">{data?.founder}</dd>
           </div>
-          <div className="flex flex-col pb-3 pt-3">
+          <div className="flex flex-col pt-3 pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Email
             </dt>
             <dd className="text-sm font-semibold">{data?.email}</dd>
           </div>
-          <div className="flex flex-col pb-3 pt-3">
+          <div className="flex flex-col pt-3 pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Contact Number
             </dt>
             <dd className="text-sm font-semibold">{data?.contact}</dd>
           </div>
-          <div className="flex flex-col pb-3 pt-3">
+          <div className="flex flex-col pt-3 pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Location
             </dt>
             <dd className="text-sm font-semibold">{data?.location}</dd>
           </div>
-          <div className="flex flex-col pb-3 pt-3">
+          <div className="flex flex-col pt-3 pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Date
             </dt>
             <dd className="text-sm font-semibold">{data?.date}</dd>
           </div>
-          <div className="flex flex-col pb-3 pt-3">
+          <div className="flex flex-col pt-3 pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Industry
             </dt>
             <dd className="text-sm font-semibold">{data?.industry}</dd>
           </div>
-          <div className="flex flex-col pb-3 pt-3">
+          <div className="flex flex-col pt-3 pb-3">
             <dt className="mb-1 text-gray-500 md:text-sm dark:text-gray-400">
               Description
             </dt>
@@ -153,14 +153,14 @@ const DrawerComponent = ({ slideIn, handleSlideIn, data }: any) => {
         </button>
       </div>
       <div
-        className="w-full h-full z-10 fixed top-0 left-0 right-0 bottom-0 "
+        className="fixed top-0 bottom-0 left-0 right-0 z-10 w-full h-full "
         hidden={!slideIn}
         style={{ backgroundColor: "rgba(0,0,0,0.2)" }}
         onClick={handleSlideIn}
       ></div>
 
       <div
-        className="w-full h-full z-50 fixed top-0 left-0 right-0 bottom-0 items-center justify-center none"
+        className="fixed top-0 bottom-0 left-0 right-0 z-50 items-center justify-center w-full h-full none"
         hidden={!loading}
         style={{
           backgroundColor: "rgba(0,0,0,0.2)",
@@ -194,7 +194,7 @@ const DrawerComponent = ({ slideIn, handleSlideIn, data }: any) => {
 
       <div
         id="toast-success"
-        className="toast items-center w-full  max-w-xs p-4 mb-4 text-gray-800 bg-gray-50 rounded-lg shadow dark:text-gray-400 "
+        className="items-center w-full max-w-xs p-4 mb-4 text-gray-800 rounded-lg shadow toast bg-gray-50 dark:text-gray-400"
         role="alert"
         style={{display:!toast?'none':'flex', bottom:'12px', left:'12px',position:'fixed'}}
       >
