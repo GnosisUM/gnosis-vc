@@ -1,8 +1,12 @@
 import Table from "./components/Table"
+import DrawerComponent from "./components/DrawerComponent"
 
 const source = () => {
     return (
-        <div><Table/></div>
+        <div>
+            <Table/>
+        <DrawerComponent/>
+        </div>
     );
 };
 
