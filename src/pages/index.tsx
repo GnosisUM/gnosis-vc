@@ -9,7 +9,7 @@ export default function Home() {
             <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
                 <div className="max-w-screen-xl px-4 py-24 mx-auto text-center lg:py-56">
                     <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">
-                        Revolutioning{" "}
+                        Revolutionizing{" "}
                         <span className="text-blue-600 dark:text-blue-500">
                             Angel's
                         </span>{" "}
